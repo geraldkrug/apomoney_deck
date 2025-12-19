@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>@Pomoney Pitch Deck</title>
+<style>
+  body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    overflow: hidden;
+  }
+  .deck {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .slide {
+    width: 90%;
+    height: 90%;
+    background: white;
+    border-radius: 12px;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+  }
+  .slide.active { display: flex; }
+  h1, h2 { margin: 0 0 20px 0; }
+  p { font-size: 1.1rem; line-height: 1.5; }
+  .nav {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+  }
+  .nav button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    background: #0B3D91;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .nav button:disabled {
+    background: #aaa;
+    cursor: not-allowed;
+  }
+  svg {
+    width: 100%;
+    height: 300px;
+  }
+  .timeline circle {
+    fill: #00B3A6;
+  }
+  .timeline line {
+    stroke: #0B3D91;
+    stroke-width: 4;
+  }
+</style>
+</head>
+<body>
+
+<div class="deck">
+  <!-- Slide 1 -->
+  <div class="slide active">
+    <h1>@Pomoney</h1>
+    <h2>Task-Based CBDC Readiness Platform</h2>
+    <p>Non-monetary participation credits for education & policy simulation.</p>
+ <br>
+	<br>
+   <svg>
+      <line x1="50" y1="150" x2="250" y2="150" stroke="#00B3A6" stroke-width="4"/>
+      <circle cx="50" cy="150" r="20" fill="#0B3D91"/>
+      <circle cx="250" cy="150" r="20" fill="#0B3D91"/>
+    </svg>
+  </div>
+
+  <!-- Slide 2 -->
+  <div class="slide">
+    <h2>Executive Summary</h2>
+    <p>Educate and engage participants using structured task programs.<br>
+       Provides behavioral insights for digital currency pilots.<br>
+       Safe, non-monetary, compliant, and audit-ready.</p>
+ <br>
+	<br> 
+  <svg>
+      <rect x="50" y="50" width="150" height="50" fill="#00B3A6"/>
+      <rect x="250" y="50" width="150" height="50" fill="#0B3D91"/>
+      <rect x="450" y="50" width="150" height="50" fill="#FFC72C"/>
+    </svg>
+  </div>
+
+  <!-- Slide 3 -->
+  <div class="slide">
+    <h2>The Problem</h2>
+    <p>Central banks need user engagement insights.<br>
+       Pilots often fail to test incentives safely.<br>
+       Lack of structured, scalable simulation environments.</p>
+ <br>
+	<br>  
+ <svg>
+      <circle cx="100" cy="100" r="30" fill="#FF6F61"/>
+      <circle cx="300" cy="100" r="30" fill="#FF6F61"/>
+      <circle cx="500" cy="100" r="30" fill="#FF6F61"/>
+      <line x1="130" y1="100" x2="270" y2="100"/>
+      <line x1="330" y1="100" x2="470" y2="100"/>
+    </svg>
+  </div>
+
+  <!-- Slide 4 -->
+  <div class="slide">
+    <h2>Pomoney Overview</h2>
+    <p>Task Groups → Tasks → Participation Credits → Analytics Dashboard</p>
+ <br>
+	<br> 
+  <svg>
+      <rect x="50" y="100" width="100" height="50" fill="#0B3D91"/>
+      <rect x="200" y="100" width="100" height="50" fill="#00B3A6"/>
+      <rect x="350" y="100" width="100" height="50" fill="#FFC72C"/>
+      <rect x="500" y="100" width="150" height="50" fill="#0B3D91"/>
+      <line x1="150" y1="125" x2="200" y2="125" stroke="#333" stroke-width="2"/>
+      <line x1="300" y1="125" x2="350" y2="125" stroke="#333" stroke-width="2"/>
+      <line x1="450" y1="125" x2="500" y2="125" stroke="#333" stroke-width="2"/>
+    </svg>
+  </div>
+
+  <!-- Slide 5 -->
+  <div class="slide">
+    <h2>Compliance & Safety</h2>
+    <p>• No issuance of CBDC or legal tender<br>
+       • No wallets, payments, or financial execution<br>
+       • Participation Credits are non-monetary<br>
+       • Full disclaimers and audit-ready logs</p>
+  <br>
+	<br>
+</div>
+
+  <!-- Slide 6 -->
+  <div class="slide">
+    <h2>Pilot Concept</h2>
+    <p>User completes task groups → Credits assigned → Data tracked off-platform → Regulator observes effects.</p>
+  <br>
+	<br> 
+ <svg class="timeline">
+      <line x1="50" y1="150" x2="550" y2="150"/>
+      <circle cx="50" cy="150" r="15"/>
+      <circle cx="200" cy="150" r="15"/>
+      <circle cx="350" cy="150" r="15"/>
+      <circle cx="500" cy="150" r="15"/>
+    </svg>
+  </div>
+
+  <!-- Slide 7 -->
+  <div class="slide">
+    <h2>Data & Insights</h2>
+    <p>Completion rates, drop-offs, engagement patterns. Policy simulations and anonymized dashboards.</p>
+ <br>
+	<br>
+ </div>
+
+  <!-- Slide 8 -->
+  <div class="slide">
+    <h2>Roadmap</h2>
+    <p>Phase 1: Education & Credits (ChatGPT-safe)<br>
+       Phase 2: Interoperability metadata prep<br>
+       Phase 3: Off-platform pilot<br>
+       Phase 4: Full CBDC pilot (regulator-approved)</p>
+  <br>
+	<br>
+</div>
+
+  <!-- Slide 9 -->
+  <div class="slide">
+    <h2>Why Pomoney</h2>
+    <p>Compliant, safe experimentation, behavioral insights, structured incentive modeling, minimal risk.</p>
+ <br>
+	<br>
+ </div>
+
+  <!-- Slide 10 -->
+  <div class="slide">
+    <h2>Next Steps</h2>
+    <p>Sign NDA / MOA → Define participants → Configure backend → Pilot simulation → Receive anonymized engagement data.</p>
+  <br>
+	<br>
+</div>
+
+  <!-- Navigation -->
+  <div class="nav">
+    <button id="prev">Previous</button>
+    <button id="next">Next</button>
+  </div>
+</div>
+
+<script>
+let current = 0;
+const slides = document.querySelectorAll('.slide');
+const prevBtn = document.getElementById('prev');
+const nextBtn = document.getElementById('next');
+
+function showSlide(index) {
+  slides.forEach(s => s.classList.remove('active'));
+  slides[index].classList.add('active');
+  prevBtn.disabled = index === 0;
+  nextBtn.disabled = index === slides.length -1;
+}
+
+prevBtn.addEventListener('click', () => {
+  if (current > 0) current--;
+  showSlide(current);
+});
+
+nextBtn.addEventListener('click', () => {
+  if (current < slides.length -1) current++;
+  showSlide(current);
+});
+
+showSlide(current);
+</script>
+
+</body>
+</html>
